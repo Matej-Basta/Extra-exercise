@@ -41,3 +41,16 @@ const butLast = (arr) => {
 butLast([0, 4]);
 butLast([5, 4, 3, 6, 7]);
 butLast([1]);
+
+//function that reverses the array
+const reverse = (arr) => {
+  let reversedArr = [];
+  arr.forEach((element) => {
+    reversedArr.unshift(element);
+  });
+  console.log(reversedArr);
+};
+
+reverse([0, 4]);
+reverse([5, 4, 3, 6, 7]);
+reverse([1]);
