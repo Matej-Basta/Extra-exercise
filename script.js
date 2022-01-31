@@ -8,9 +8,9 @@ const len = (arr) => {
   console.log(count);
 };
 
-len([0]);
-len([5, 4, 3, 6, 7]);
-len([0, 0, 0]);
+// len([0]);
+// len([5, 4, 3, 6, 7]);
+// len([0, 0, 0]);
 
 //function that returns the last element of an array without using length method
 const last = (arr) => {
@@ -21,9 +21,9 @@ const last = (arr) => {
   console.log(number);
 };
 
-last([0]);
-last([5, 4, 3, 6, 7]);
-last([]);
+// last([0]);
+// last([5, 4, 3, 6, 7]);
+// last([]);
 
 //function that returns the second to last element of an array without using the length method
 const butLast = (arr) => {
@@ -38,9 +38,9 @@ const butLast = (arr) => {
   console.log(number);
 };
 
-butLast([0, 4]);
-butLast([5, 4, 3, 6, 7]);
-butLast([1]);
+// butLast([0, 4]);
+// butLast([5, 4, 3, 6, 7]);
+// butLast([1]);
 
 //function that reverses the array
 const reverse = (arr) => {
@@ -51,6 +51,20 @@ const reverse = (arr) => {
   console.log(reversedArr);
 };
 
-reverse([0, 4]);
-reverse([5, 4, 3, 6, 7]);
-reverse([1]);
+// reverse([0, 4]);
+// reverse([5, 4, 3, 6, 7]);
+// reverse([1]);
+
+//funciton that checks whether the array is an palindrom
+const isPalindrome = (arr) => {
+  let reversedArr = [];
+  arr.forEach((element) => {
+    reversedArr.unshift(element);
+  });
+  console.log(arr.every((element, index) => element === reversedArr[index]));
+};
+
+isPalindrome([5, 4, 3, 4, 5]);
+isPalindrome([5, 4, 3, 2, 6]);
+isPalindrome([2]);
+isPalindrome([2, 3, 2, 2, 2, 2]);
