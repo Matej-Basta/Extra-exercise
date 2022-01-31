@@ -24,3 +24,20 @@ const last = (arr) => {
 last([0]);
 last([5, 4, 3, 6, 7]);
 last([]);
+
+//function that returns the second to last element of an array without using the length method
+const butLast = (arr) => {
+  let number = null;
+  arr.forEach((element, index) => {
+    if (arr[1] !== undefined) {
+      if (arr[index + 1] === undefined) {
+        number = arr[index - 1];
+      }
+    }
+  });
+  console.log(number);
+};
+
+butLast([0, 4]);
+butLast([5, 4, 3, 6, 7]);
+butLast([1]);
