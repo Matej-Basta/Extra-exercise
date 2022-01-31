@@ -55,7 +55,7 @@ const reverse = (arr) => {
 // reverse([5, 4, 3, 6, 7]);
 // reverse([1]);
 
-//funciton that checks whether the array is an palindrom
+//funciton that checks whether the array is an palindrome
 const isPalindrome = (arr) => {
   let reversedArr = [];
   arr.forEach((element) => {
